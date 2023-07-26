@@ -1,0 +1,103 @@
+<div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-5 col-lg-5 col-md-7 offset-lg-4 offset-md-4">   
+                <div class="panel border bg-white">
+                <div class="panel-heading"><h3 class="pt-3 font-weight-bold">
+                        <br><B>Register</B>
+                </h3></div>
+                <div class="panel-body p-2">
+                    <form [formGroup]="registerForm">
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="registerForm.controls['FullName'].dirty && registerForm.hasError('required','FullName')">
+                                <!-- <span class="fa fa-user p-2"></span> -->
+                                <input formControlName="FullName" type="text" placeholder="FullName">
+                            </div> 
+                        </div>
+                        <small *ngIf="registerForm.controls['FullName'].dirty && registerForm.controls['FullName'].hasError('required')" class="text-danger">*FullName is required</small>
+                        <!-- <button type="button" (click)="clearUsername()"></button> Add Clear button -->
+
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="registerForm.controls['Email'].dirty && registerForm.hasError('required','Email')">
+                                <!-- <span class="fa fa-user p-2"></span> -->
+                                <input formControlName="Email" type="text" placeholder="Email">
+                            </div> 
+                        </div>
+                        <small *ngIf="registerForm.controls['Email'].dirty && registerForm.controls['Email'].hasError('required')" class="text-danger">*Email is required</small>
+
+
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="registerForm.controls['AadharCardNo'].dirty && registerForm.hasError('required','AadharCardNo')">
+                                <!-- <span class="fa fa-lock p-2"></span> -->
+                                <input formControlName="AadharCardNo" type="text" placeholder="AadharCardNo">
+                            </div>
+                        </div>
+                        <small *ngIf="registerForm.controls['AadharCardNo'].dirty && registerForm.hasError('required','AadharCardNo') " class="text-danger">*AadharCardNo is required</small>
+
+
+                        
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="registerForm.controls['DOB'].dirty && registerForm.hasError('required','DOB')">
+                                <!-- <span class="fa fa-lock p-2"></span> -->
+                                <input formControlName="DOB" type="text" placeholder="DOB">
+                            </div>
+                        </div>
+                        <small *ngIf="registerForm.controls['DOB'].dirty && registerForm.hasError('required','DOB') " class="text-danger">*DOB is required</small>
+
+                      
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="registerForm.controls['ResidentialAddress'].dirty && registerForm.hasError('required','ResidentialAddress')">
+                                <!-- <span class="fa fa-lock p-2"></span> -->
+                                <input formControlName="ResidentialAddress" type="text" placeholder="ResidentialAddress">
+                            </div>
+                        </div>
+                        <small *ngIf="registerForm.controls['ResidentialAddress'].dirty && registerForm.hasError('required','ResidentialAddress') " class="text-danger">*ResidentialAddress is required</small>
+
+
+
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="registerForm.controls['PermanentAddress'].dirty && registerForm.hasError('required','PermanentAddress')">
+                                <!-- <span class="fa fa-lock p-2"></span> -->
+                                <input formControlName="PermanentAddress" type="text" placeholder="Permanent Address">
+                            </div>
+                        </div>
+                        <small *ngIf="registerForm.controls['PermanentAddress'].dirty && registerForm.hasError('required','PermanentAddress') " class="text-danger">*PermanentAddress is required</small>
+
+
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="registerForm.controls['Password'].dirty && registerForm.hasError('required','Password')">
+                                <!-- <span class="fa fa-lock p-2"></span> -->
+                                <input formControlName="Password" [type]="type" placeholder="Password">
+                                <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
+                            </div>
+                        </div>
+                        <small *ngIf="registerForm.controls['Password'].dirty && registerForm.hasError('required','Password') " class="text-danger">*Password is required</small>
+
+
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="registerForm.controls['ConfirmPassword'].dirty && registerForm.hasError('required','ConfirmPassword')">
+                                <!-- <span class="fa fa-lock p-2"></span> -->
+                                <input formControlName="ConfirmPassword" [type]="type" placeholder="Confirm Password">
+                                <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
+                            </div>
+                        </div>
+                        <small *ngIf="registerForm.controls['ConfirmPassword'].dirty && registerForm.hasError('required','ConfirmPassword') " class="text-danger">*Confirm Password is required</small>
+
+
+                        
+                        
+                        <!-- <div class="form-inline fr mt-4">
+                            <a id="forget" class="font-weight-bold" routerLink="/forgot-password">Forget Password?</a>
+                        </div> -->
+                        <button (click)="OnSignup" type="submit" class="btn btn-primary btn-block mt-4 w-100" [disabled]="!registerForm.valid" routerLink="/login" >SignUp</button>
+                        <div class="text-center pt-4 text-muted">Already have an account?<a id="forget" routerLink="/login">Login</a></div>
+                    </form>
+                </div>
+                <div class="mx-3 my-2 py-2 bordert">
+                    <div class="text-center py-3">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
