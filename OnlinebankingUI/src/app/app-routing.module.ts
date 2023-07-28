@@ -9,9 +9,10 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { AccountstatementComponent } from './components/accountstatement/accountstatement.component';
 import { ChangePasswordComponent } from './components/change-password/change-password.component';
 import { FundTransferComponent } from './components/fund-transfer/fund-transfer.component';
-import { AccountSummaryComponent } from './components/account-summary/account-summary.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { OpenAccComponent } from './components/open-acc/open-acc.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { FinancialDetailsComponent } from './components/financial-details/financial-details.component';
 
 const routes:Routes=[
   { path: '', redirectTo: '/homepage', pathMatch: 'full' }, // Default route
@@ -29,10 +30,7 @@ const routes:Routes=[
     { path:'AccountStatement',
       component:AccountstatementComponent
     },
-    { 
-    path: 'Account-Summary', 
-    component:AccountSummaryComponent
-    },
+    
     { 
       path: 'forgot-password', 
       component:ForgotPasswordComponent
@@ -46,9 +44,15 @@ const routes:Routes=[
       component:FundTransferComponent
     },
     { 
-      path: 'open-acc', 
-      component:OpenAccComponent
+      path: 'user-details', 
+      component:UserDetailsComponent
     },
+
+    {
+      path:'financialdetails',
+      component:FinancialDetailsComponent
+    },
+    
     // { 
     //   path: 'pendingApproval',
     //   component:pendingApprivals 
@@ -58,7 +62,10 @@ const routes:Routes=[
       path:'dashborad',
       component:DashboardComponent
     },
-    
+    {
+      path:'openacc',
+      component:OpenAccComponent
+    },
     
 
   

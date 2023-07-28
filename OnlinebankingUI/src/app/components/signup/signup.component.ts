@@ -23,6 +23,7 @@ export class SignupComponent {
       AadharCardNo: ['', [Validators.required]],
       DOB: ['', [Validators.required]],
       Address: ['', [Validators.required]],
+      Occupation: ['', [Validators.required]],
       Password: ['', [Validators.required]],
       ConfirmPassword: ['', [Validators.required]],
     });

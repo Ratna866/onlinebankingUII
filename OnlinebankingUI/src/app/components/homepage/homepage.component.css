@@ -1,25 +1,29 @@
-/* Color of the links BEFORE scroll */
-.navbar-scroll .nav-link,
-.navbar-scroll .navbar-toggler .fa-bars {
-  color:white;
-  font-size: 2px;
+
+
+footer{
+
+  background-attachment: fixed;
+
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(183,231,246,1) 0%, rgba(56,143,170,1) 56%);
+
+  padding: 10px;
+
 }
+header {
 
-/* Color of the links AFTER scroll */
-.navbar-scrolled .nav-link,
-.navbar-scrolled .navbar-toggler .fa-bars {
-  color:black;
+  padding: 10px;
+
+  text-align: center;
+
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(6, 63, 80) 56%);
+
+  color: white;
+
+  font-size: 40px;
+
 }
-
-/* Color of the navbar AFTER scroll */
-.navbar-scrolled {
-  background-color:black;
+h2{
+  text-decoration:dotted;
+  text-size-adjust: 12px;
+  text-align: center;
 }
-
-/* An optional height of the navbar AFTER scroll */
-.navbar.navbar-scroll.navbar-scrolled {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-

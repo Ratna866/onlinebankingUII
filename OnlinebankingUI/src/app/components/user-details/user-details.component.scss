@@ -1,0 +1,159 @@
+// .account-table {
+//     border-collapse: collapse;
+//     width: 100%;
+//     margin: 20px auto;
+//     max-width: 500px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     background-color: #f9f9f9;
+//     justify-content: center;
+    
+//   }
+  
+//   .account-table td {
+//     padding: 10px;
+//     border-bottom: 1px solid #ccc;
+//     justify-content: center;
+
+//   }
+  
+//   .account-table tr:last-child td {
+//     border-bottom: none;
+//     justify-content: center;
+
+//   }
+  
+//   .account-table label {
+//     font-weight: bold;
+//     display: inline-block;
+//     width: 150px;
+//     justify-content: center;
+
+//   }
+  
+//   .account-table input,
+//   .account-table textarea {
+//     width: 100%;
+//     padding: 8px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//   }
+  
+//   .account-table textarea {
+//     resize: vertical;
+//   }
+  
+//   .account-table input[type='email'] {
+//     font-family: Arial, sans-serif;
+//   }
+  
+//   .account-table h2 {
+//     text-align: center;
+//     margin-bottom: 20px;
+//   }
+/* Add CSS styles to center the table */
+// div {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 50vh;
+// }
+
+// table {
+//   max-width: 500px; /* Set a maximum width for the table */
+//   border-collapse: collapse;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+//   background-color: #f9f9f9;
+// }
+
+// table td {
+//   padding: 10px;
+//   border-bottom: 1px solid #ccc;
+// }
+
+// table tr:last-child td {
+//   border-bottom: none;
+// }
+
+// table label {
+//   font-weight: bold;
+//   display: inline-block;
+//   width: 150px;
+// }
+
+// table input,
+// table textarea {
+//   width: 100%;
+//   padding: 8px;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+// }
+
+// table textarea {
+//   resize: vertical;
+// }
+
+// table input[type='email'] {
+//   font-family: Arial, sans-serif;
+// }
+
+// h2 {
+//   text-align: center;
+//   margin-bottom: 20px;
+// }
+.header {
+  text-align: center;
+  padding: 30px;
+}
+
+table {
+  margin:0 auto;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table label {
+  font-weight: bold;
+  display: inline-block;
+  width: 150px;
+}
+table input,
+table textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+table textarea {
+  resize: vertical;
+}
+
+table input[type='email'] {
+  font-family: Arial, sans-serif;
+}
+
+footer{
+
+  background-attachment: fixed;
+
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(6, 63, 80) 56%);
+
+  padding: 10px;
+
+}
+  

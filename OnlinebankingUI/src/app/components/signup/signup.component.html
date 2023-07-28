@@ -1,14 +1,17 @@
+<div class="header">
+    <h2>Banking</h2> 
+    </div>
 <div class="outer">
     <div class="container">
         <div class="row">
-            <div class="offset-md-5 col-lg-5 col-md-7 offset-lg-4 offset-md-4">   
+            <div class="offset-md-10 col-lg-5 col-md-4 offset-lg-4 offset-md-2">   
                 <div class="panel border bg-white">
-                <div class="panel-heading"><h3 class="pt-3 font-weight-bold">
+                <div class="panel-heading"><h3 class="pt-1 font-weight-bold">
                         <br><B>Register</B>
                 </h3></div>
-                <div class="panel-body p-2">
+                <div class="panel-body p-4">
                     <form [formGroup]="signupForm">
-                        <div class="form-group pt-3">
+                        <div class="form-group pt-5">
                             <div class="input-field" [class.error]="signupForm.controls['FullName'].dirty && signupForm.hasError('required','FullName')">
                                 <!-- <span class="fa fa-user p-2"></span> -->
                                 <input formControlName="FullName" type="text" placeholder="FullName">
@@ -51,9 +54,16 @@
                                 <input formControlName="Address" type="text" placeholder="Address">
                             </div>
                         </div>
-                        <small *ngIf="signupForm.controls['Address'].dirty && signupForm.hasError('required','Address') " class="text-danger">*ResidentialAddress is required</small>
+                        <small *ngIf="signupForm.controls['Address'].dirty && signupForm.hasError('required','Address') " class="text-danger">*Address is required</small>
 
 
+                        <div class="form-group pt-3">
+                            <div class="input-field" [class.error]="signupForm.controls['Occupation'].dirty && signupForm.hasError('required','Occupation')">
+                                <!-- <span class="fa fa-lock p-2"></span> -->
+                                <input formControlName="Occupation" type="text" placeholder="Occupation">
+                            </div>
+                        </div>
+                        <small *ngIf="signupForm.controls['Occupation'].dirty && signupForm.hasError('required','Occupation') " class="text-danger">*Occupation is required</small>
 
                         <div class="form-group pt-3">
                             <div class="input-field" [class.error]="signupForm.controls['Password'].dirty && signupForm.hasError('required','Password')">
@@ -92,3 +102,8 @@
         </div>
     </div>
 </div>
+<footer class="footer fixed-bottom text-center">
+    <div className="col-md-4 d-flex align-items-center">
+      <!-- <img src="https://companieslogo.com/img/orig/CAP.PA-9b4110b0.png?t=1651902188" width="20" height="20" className="cg-foot-logo mb-2"/>&nbsp; 2023 Capgemini. All rights reserved. -->
+  </div>
+  </footer>
