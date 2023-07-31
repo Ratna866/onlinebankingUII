@@ -1,17 +1,19 @@
 <div class="header">
-    <h2>Banking</h2> 
+    <h2>Register</h2> 
     </div>
+
+
 <div class="outer">
     <div class="container">
         <div class="row">
             <div class="offset-md-10 col-lg-5 col-md-4 offset-lg-4 offset-md-2">   
                 <div class="panel border bg-white">
-                <div class="panel-heading"><h3 class="pt-1 font-weight-bold">
-                        <br><B>Register</B>
+                <div class="panel-heading"><h3 class="pt-5 font-weight-bold">
+                        <!-- <br><B>Register</B> -->
                 </h3></div>
-                <div class="panel-body p-4">
+                <div class="panel-body p-1">
                     <form [formGroup]="signupForm">
-                        <div class="form-group pt-5">
+                        <div class="form-group pt-3">
                             <div class="input-field" [class.error]="signupForm.controls['FullName'].dirty && signupForm.hasError('required','FullName')">
                                 <!-- <span class="fa fa-user p-2"></span> -->
                                 <input formControlName="FullName" type="text" placeholder="FullName">
@@ -104,6 +106,6 @@
 </div>
 <footer class="footer fixed-bottom text-center">
     <div className="col-md-4 d-flex align-items-center">
-      <!-- <img src="https://companieslogo.com/img/orig/CAP.PA-9b4110b0.png?t=1651902188" width="20" height="20" className="cg-foot-logo mb-2"/>&nbsp; 2023 Capgemini. All rights reserved. -->
-  </div>
+      <span class="cg-foot-logo">Your Bank Name.</span> All rights reserved.
+    </div>
   </footer>

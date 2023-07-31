@@ -151,9 +151,12 @@ footer{
 
   background-attachment: fixed;
 
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(6, 63, 80) 56%);
-
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(148, 162, 167) 56%);
+  
   padding: 10px;
 
+}
+nav a {
+  color:black; /* Replace 'blue' with your desired text color */
 }
   

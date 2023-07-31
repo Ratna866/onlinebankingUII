@@ -1,9 +1,16 @@
+    <div class="header">
+
+        <h2>financial Details</h2>
+        
+        </div>
+
+<br>
 <div>
-    <h2>Financial Details</h2>
+    <!-- <h2>Financial Details</h2> -->
   
     <div>
-      <p><strong>Account Number:</strong> {{ financialDetails.accountNumber }}</p>
-      <p><strong>Balance:</strong> $ {{ financialDetails.balance }}</p>
+      <!-- <p><strong>Account Number:</strong> {{ financialDetails.accountNumber }}</p> -->
+      <!-- <p><strong>Balance:</strong> $ {{ financialDetails.balance }}</p> -->
     </div>
   
     <div>
@@ -13,11 +20,17 @@
           <th>Date</th>
           <th>Amount</th>
         </tr>
-        <tr *ngFor="let transaction of financialDetails.recentTransactions">
-          <td>{{ transaction.date }}</td>
-          <td >{{ transaction.amount | currency }}</td>
-        </tr>
+        <!-- <tr *ngFor="let transaction of financialDetails.recentTransactions"> -->
+          <!-- <td>{{ transaction.date }}</td> -->
+          <!-- <td >{{ transaction.amount | currency }}</td> -->
+        <!-- </tr> -->
       </table>
     </div>
   </div>
+  
+  <footer class="footer fixed-bottom text-center">
+    <div className="col-md-4 d-flex align-items-center">
+      <span class="cg-foot-logo">Your Bank Name.</span> All rights reserved.
+    </div>
+  </footer>
   

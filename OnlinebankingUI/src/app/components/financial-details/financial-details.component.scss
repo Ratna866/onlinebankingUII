@@ -30,4 +30,29 @@ div {
   td.credit {
     color: #5cb85c;
   }
+
+  footer{
+
+    background-attachment: fixed;
+  
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(148, 162, 167) 56%);  
+    padding: 10px;
+  
+  }
+  .header {
+  
+    padding: 10px;
+  
+    text-align: center;
+  
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(148, 162, 167) 56%);  
+    color:#315a67;
+  
+    font-size: 40px;
+  
+  }
+  nav a {
+    color:black; /* Replace 'blue' with your desired text color */
+  }
+  
   

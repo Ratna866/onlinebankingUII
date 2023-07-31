@@ -79,7 +79,7 @@ img{
   
     text-align: center;
   
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(6, 63, 80) 56%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(148, 162, 167) 56%);
   
     color: white;
   
@@ -90,8 +90,11 @@ img{
 
     background-attachment: fixed;
   
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(6, 63, 80) 56%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(183,231,246,1) 0%, rgba(56,143,170,1) 56%);
   
     padding: 10px;
   
+  }
+  nav a {
+    color:black; /* Replace 'blue' with your desired text color */
   }
