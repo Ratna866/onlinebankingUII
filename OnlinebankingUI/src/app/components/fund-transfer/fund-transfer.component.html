@@ -1,1 +1,26 @@
-<p>fund-transfer works!</p>
+<div class="header">
+</div>
+
+<a class="nav-link" routerLink="/dashborad">Back to Dashboard</a><br>
+
+
+    <div class="container">
+        <h2>Fund Transfer</h2>
+        <label for="transferType">Select Transfer Type:</label>
+        <select [(ngModel)]="selectedTransferType" id="transferType">
+          <option value="RTGS">RTGS</option>
+          <option value="IMPS">IMPS</option>
+          <option value="NEFT">NEFT</option>
+        </select>
+        <button (click)="transferFunds()">Transfer</button>
+      </div>
+      
+
+
+
+
+    <footer class="footer fixed-bottom text-center">
+        <div className="col-md-4 d-flex align-items-center">
+          <!-- <span class="cg-foot-logo">Your Bank Name.</span> All rights reserved. -->
+        </div>
+      </footer>

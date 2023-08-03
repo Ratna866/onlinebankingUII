@@ -15,7 +15,6 @@ import { FormsModule } from '@angular/forms';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { OpenAccComponent } from './components/open-acc/open-acc.component';
 import { FundTransferComponent } from './components/fund-transfer/fund-transfer.component';
-import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './components/signup/signup.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -34,14 +33,12 @@ import { FinancialDetailsComponent } from './components/financial-details/financ
     HomepageComponent,
     OpenAccComponent,
     FundTransferComponent,
-    ForgotPasswordComponent,
     SignupComponent,
     RegisterComponent,
     UserDetailsComponent,
     AccountSummaryComponent,
     FinancialDetailsComponent
     
-   
   ],
   imports: [
     BrowserModule,

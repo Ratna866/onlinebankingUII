@@ -146,6 +146,19 @@ table textarea {
 table input[type='email'] {
   font-family: Arial, sans-serif;
 }
+.header {
+
+  padding: 5px;
+
+  text-align: center;
+
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(111, 191, 215) 0%, rgb(148, 162, 167) 56%);
+
+  color: white;
+
+  font-size: 40px;
+
+}
 
 footer{
 
@@ -158,5 +171,12 @@ footer{
 }
 nav a {
   color:black; /* Replace 'blue' with your desired text color */
+}
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
 }
   

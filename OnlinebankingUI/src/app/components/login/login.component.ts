@@ -26,6 +26,8 @@ export class LoginComponent implements OnInit{
   type:string="password"
   isText:boolean=false;
   eyeIcon:string="fa-eye-slash";
+  public resetPasswordEmail!:string;
+  public isValidEmail!:boolean;
   // loginForm!: FormGroup;
   loginForm: FormGroup<any> = new FormGroup({});
 
@@ -77,9 +79,13 @@ OnLogin(){
         this.validateAllFormFields(control)
       }
     })
+    
+
+  }
+
   }
   
-}
+
 
 
 

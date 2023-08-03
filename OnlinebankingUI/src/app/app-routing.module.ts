@@ -9,7 +9,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { AccountstatementComponent } from './components/accountstatement/accountstatement.component';
 import { ChangePasswordComponent } from './components/change-password/change-password.component';
 import { FundTransferComponent } from './components/fund-transfer/fund-transfer.component';
-import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+// import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { OpenAccComponent } from './components/open-acc/open-acc.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { FinancialDetailsComponent } from './components/financial-details/financial-details.component';
@@ -31,10 +31,10 @@ const routes:Routes=[
       component:AccountstatementComponent
     },
     
-    { 
-      path: 'forgot-password', 
-      component:ForgotPasswordComponent
-    },
+    // { 
+    //   path: 'forgot-password', 
+    //   component:ForgotPasswordComponent
+    // },
 
     { path: 'app-change-password', 
     component: ChangePasswordComponent 
